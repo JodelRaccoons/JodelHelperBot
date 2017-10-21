@@ -1,0 +1,19 @@
+{
+  "name": "JodelHelperBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "krokofant <krokofant@users.noreply.github.com> (https://github.com/krokofant/)",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "4.0.0",
+    "google-play-scraper": "3.3.1",
+    "jsonfile": "4.0.0",
+    "node-telegram-bot-api": "0.28.0"
+  }
+}
