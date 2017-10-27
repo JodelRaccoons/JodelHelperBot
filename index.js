@@ -39,7 +39,7 @@ async function run() {
     let playVersion = await getCurrentVersion()
     if (data.version !== playVersion) {
       data.version = playVersion
-      bot.sendMessage(
+      await bot.sendMessage(
         TARGET_GROUP,
         `Jodel version ${playVersion} is now on Play Store`
       )
@@ -49,7 +49,6 @@ async function run() {
   } catch (error) {
     console.error(error)
   }
-  process.exit(0)
 }
 
-run()
+run().then(()=>{process.exit(0)})
